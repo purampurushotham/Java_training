@@ -123,6 +123,7 @@ th {text-align: left;}
 .left {
     float: left;
     margin-right: 10px;
+    margin-top: 0px;
 }
 .right {
     float: left;
@@ -138,4 +139,19 @@ th {text-align: left;}
     pointer-events: none;
     cursor: default;
     opacity: 0.5;
+}
+input{
+    outline: 0;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #939ca7;
+}
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }

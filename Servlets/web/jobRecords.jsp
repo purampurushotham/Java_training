@@ -13,8 +13,7 @@
 </head>
 <body>
 <div class="rightButton">
-    <a href="registration.jsp" class="button -fill -blue">Add Employee</a>
-    <a class="button -fill -blue greyedOut" id="btn-delete">Delete Selected</a>
+    <a href="/registration.jsp" class="button -fill -blue">Add Employee</a>
 </div>
 <div class="employeeRecords">
 <table>
