@@ -36,7 +36,7 @@ public class JobRecordsServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String connectionURL = "jdbc:mysql://localhost/employees";
+        String connectionURL = "jdbc:mysql://192.168.1.107/employees";
         Connection connection = null;
         ResultSet rs;
         List jobsList = new ArrayList();
@@ -44,7 +44,7 @@ public class JobRecordsServlet extends HttpServlet {
         PrintWriter pw=response.getWriter();//get the stream to write the data
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(connectionURL,"root","root");
+            connection = DriverManager.getConnection(connectionURL,"purushotham","pass");
             String sql = "Select * from jobRecords";
             Statement st = connection.createStatement();
             st.executeQuery(sql);

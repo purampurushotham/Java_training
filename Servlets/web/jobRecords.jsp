@@ -12,9 +12,14 @@
     <title>Title</title>
 </head>
 <body>
+<div class="rightButton">
+    <a href="registration.jsp" class="button -fill -blue">Add Employee</a>
+    <a class="button -fill -blue greyedOut" id="btn-delete">Delete Selected</a>
+</div>
+<div class="employeeRecords">
 <table>
     <tr>
-        <td>ID</td>
+    <td>ID</td>
     <td>Job-Number</td>
     <td>Date</td>
     <td>Department</td>
@@ -44,5 +49,6 @@
     }
     %>
 </table>
+</div>
 </body>
 </html>
