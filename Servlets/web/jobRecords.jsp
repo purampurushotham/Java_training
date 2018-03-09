@@ -16,6 +16,8 @@
     <a href="/registration.jsp" class="button -fill -blue">Add Employee</a>
 </div>
 <div class="employeeRecords">
+    <h3>Hello, <%= session.getAttribute( "user" ) %>
+    </h3>
 <table>
     <tr>
     <td>ID</td>

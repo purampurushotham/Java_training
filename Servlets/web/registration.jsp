@@ -12,15 +12,15 @@
     <link rel='stylesheet' href='employee.css' type='text/css' />
 </head>
 <body>
-<H2>Job Registration</H2>
+<H2 class="title" >Job Registration</H2>
 <form name='registration' action = "${pageContext.request.contextPath}/addEmployee" method = "POST">
     <ul>
         <li><label for="jobno">Job Number:</label></li>
-        <li><input type="text" name="jobno" size="12" />
+        <li><input type="text" name="jobno"/>
             <span class="val_error" id="fname_error"></span>
         </li>
         <li><label for="doj">Date:</label></li>
-        <li><input type="Date" name="doj" /></li>
+        <li><input type="Date" name="doj" class="unstyled" /></li>
         <li><label for="dept">Department:</label></li>
         <li><input type="text" name="dept"/>
             <span class="val_error" id="lname_error"></span>
@@ -37,7 +37,7 @@
         <li><label for="jobname">Job Name:</label></li>
         <li><input type="text" name="jobname"/></li>
         <li>
-            <input type="submit" value="ADD"class="left button"/>
+            <input type="submit" value="ADD"class="left button -fill -blue"/>
             <input type="button" id="cancelBtn" class="rigth button" value="CANCEL"/>
         </li>
     </ul>
