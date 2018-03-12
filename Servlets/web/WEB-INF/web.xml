@@ -10,7 +10,6 @@
         <servlet-name>JobRecordsServlet</servlet-name>
         <servlet-class>com.servlets.JobRecordsServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>JobRecordsServlet</servlet-name>
         <url-pattern>/jobRecords</url-pattern>

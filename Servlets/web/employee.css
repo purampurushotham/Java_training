@@ -150,8 +150,6 @@ input{
     background-color: #ffffff;
     border: solid 1px #939ca7;
 }
-.unstyled::-webkit-inner-spin-button,
-.unstyled::-webkit-calendar-picker-indicator {
-    display: none;
+input[type=Date]::-webkit-inner-spin-button, input[type=Date]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
