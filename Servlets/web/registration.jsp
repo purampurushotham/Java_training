@@ -8,6 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <title>Job Registration</title>
     <link rel='stylesheet' href='employee.css' type='text/css' />
 </head>
@@ -23,7 +26,7 @@
             <span class="val_error" id="fname_error"></span>
         </li>
         <li><label for="doj">Date:</label></li>
-        <li><input type="Date" name="doj" class="unstyled" /></li>
+        <li><input type="Date" name="doj" /></li>
         <li><label for="dept">Department:</label></li>
         <li><input type="text" name="dept"/>
             <span class="val_error" id="lname_error"></span>
