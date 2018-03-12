@@ -9,11 +9,12 @@
 <html>
 <head>
     <link rel='stylesheet' href='employee.css' type='text/css' />
-    <title>Title</title>
+    <title>JobRecords</title>
 </head>
 <body>
 <div class="rightButton">
     <a href="/registration.jsp" class="button -fill -blue">Add Employee</a>
+    <jsp:include page="logout.jsp" />
 </div>
 <div class="employeeRecords">
     <h3>Hello, <%= session.getAttribute( "user" ) %>

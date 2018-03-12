@@ -32,6 +32,14 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutJobsServlet</servlet-name>
+        <servlet-class>com.servlets.LogoutJobsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>LogoutJobsServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>f1</filter-name>
         <filter-class>com.servlets.LoginFilter</filter-class>

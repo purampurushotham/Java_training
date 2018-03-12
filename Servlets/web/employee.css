@@ -128,7 +128,7 @@ th {text-align: left;}
 .right {
     float: left;
     margin-left: 10px;
-    margin-top: 19px;
+    margin-top: 1px;
 }
 #btn-delete{float: left;
     margin-left: 10px;
@@ -149,6 +149,24 @@ input{
     border-radius: 3px;
     background-color: #ffffff;
     border: solid 1px #939ca7;
+}
+.input{
+    outline: 0;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #939ca7;
+}
+a#cancelBtn {
+    color: black;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: solid 1px #939ca7;
+    padding: 11px;
 }
 input[type=Date]::-webkit-inner-spin-button, input[type=Date]::-webkit-outer-spin-button {
     -webkit-appearance: none;

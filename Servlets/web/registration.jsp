@@ -13,6 +13,9 @@
 </head>
 <body>
 <H2 class="title" >Job Registration</H2>
+<div class="rightButton">
+    <jsp:include page="logout.jsp" />
+</div>
 <form name='registration' action = "${pageContext.request.contextPath}/addEmployee" method = "POST">
     <ul>
         <li><label for="jobno">Job Number:</label></li>
@@ -38,7 +41,7 @@
         <li><input type="text" name="jobname"/></li>
         <li>
             <input type="submit" value="ADD"class="left button -fill -blue"/>
-            <input type="button" id="cancelBtn" class="rigth button" value="CANCEL"/>
+            <a href="/jobRecords" id="cancelBtn" class="right button">Cancel</a>
         </li>
     </ul>
 </form>

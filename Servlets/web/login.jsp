@@ -19,7 +19,7 @@
     <ul>
         <li><label for="username">User Name:</label></li>
         <li><input type="text" name="user"/></li>
-        <li><label for="password">Job Number:</label></li>
+        <li><label for="password">Password:</label></li>
         <li><input type="password" name="password"/></li>
         <li>
             <input type="submit" value="Login" class="-fill -blue button">
