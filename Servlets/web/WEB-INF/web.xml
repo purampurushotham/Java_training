@@ -39,5 +39,6 @@
     <filter-mapping>
         <filter-name>f1</filter-name>
         <url-pattern>/jobRecords</url-pattern>
+        <url-pattern>/addEmployee</url-pattern>
     </filter-mapping>
 </web-app>

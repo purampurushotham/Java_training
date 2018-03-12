@@ -2,7 +2,6 @@ package com.servlets;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -23,7 +22,7 @@ public class LoginFilter implements Filter {
             HttpServletResponse response = (HttpServletResponse) resp;
             HttpSession session = request.getSession(false);
             System.out.print(session);
-            if(session!= null){
+            if(session != null && session.getAttribute("user")!= null){
                 chain.doFilter(req, resp);
             }else{
                 RequestDispatcher rd = req.getRequestDispatcher("/login.jsp");
