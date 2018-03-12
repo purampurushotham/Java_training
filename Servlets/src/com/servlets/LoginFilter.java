@@ -15,18 +15,15 @@ public class LoginFilter implements Filter {
     String page = "/jobRecords";
     private final String userID = "puram";
     private final String password = "puram";
+    private ServletContext context;
     public void destroy() {
     }
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-            String user = req.getParameter("user");
-            String pass= req.getParameter("password");
             HttpServletRequest request = (HttpServletRequest) req;
             HttpServletResponse response = (HttpServletResponse) resp;
             HttpSession session = request.getSession(false);
-            System.out.print(request.getSession(false));
-            session.setAttribute("user",user);
-            System.out.print(session.getAttribute("user"));
-            if((userID.equals(user) && password.equals(pass)) || ((session.getAttribute("user") != null) && (session.getAttribute("user").equals(userID)))){
+            System.out.print(session);
+            if(session!= null){
                 chain.doFilter(req, resp);
             }else{
                 RequestDispatcher rd = req.getRequestDispatcher("/login.jsp");
@@ -37,7 +34,7 @@ public class LoginFilter implements Filter {
     }
 
     public void init(FilterConfig config) throws ServletException {
-
+        this.context = config.getServletContext();
     }
 
 }

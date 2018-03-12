@@ -15,11 +15,11 @@
 </head>
 <body>
 <h2 class="title">Login</h2>
-<form action="jobRecords" method="get">
+<form action="LoginServlet" method="POST">
     <ul>
-        <li><label for="jobno">User Name:</label></li>
+        <li><label for="username">User Name:</label></li>
         <li><input type="text" name="user"/></li>
-        <li><label for="jobno">Job Number:</label></li>
+        <li><label for="password">Job Number:</label></li>
         <li><input type="password" name="password"/></li>
         <li>
             <input type="submit" value="Login" class="-fill -blue button">
