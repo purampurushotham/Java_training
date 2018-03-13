@@ -19,6 +19,9 @@
     <a href="/registration.jsp" class="button -fill -blue">Add Employee</a>
     <jsp:include page="logout.jsp" />
 </div>
+<div class="rightButton">
+    <a href="/searchJobs.jsp" class="button input">Search Jobs</a>
+</div>
 <div class="employeeRecords">
     <h3>Hello, <%= session.getAttribute( "user" ) %>
     </h3>

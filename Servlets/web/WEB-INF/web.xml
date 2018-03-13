@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
     <welcome-file-list>
         <welcome-file>login.jsp</welcome-file>
     </welcome-file-list>
@@ -40,6 +42,16 @@
     <servlet-name>LogoutJobsServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+<!--
+    <servlet>
+        <servlet-name>PieChartServlet</servlet-name>
+        <servlet-class>com.servlets.PieChartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PieChartServlet</servlet-name>
+        <url-pattern>/searchJobs</url-pattern>
+    </servlet-mapping>
+-->
     <filter>
         <filter-name>f1</filter-name>
         <filter-class>com.servlets.LoginFilter</filter-class>
@@ -48,5 +60,6 @@
         <filter-name>f1</filter-name>
         <url-pattern>/jobRecords</url-pattern>
         <url-pattern>/addEmployee</url-pattern>
+        <url-pattern>/searchJobs.jsp</url-pattern>
     </filter-mapping>
 </web-app>
