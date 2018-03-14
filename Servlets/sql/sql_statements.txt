@@ -1,0 +1,55 @@
+create table jobRecords(id int NOT NULL auto_increment, name varchar(50), jobno varchar(50),date varchar(10),department varchar(50),division varchar(50),region varchar(50),status varchar(50) primary key (id));
+insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116607',' 50RM64 - 10716 Esplanade','2018-02-13','50194-Augus-crane roades','WTC - West Coast','Fulton Hogan Corporate','Approved');
+insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116607','50092L - Halswell Road','2018-02-15','50194-Augus-crane roades','50912 - WTC Civil Construction','Fulton Hogan Canterbury','Exported');
+ insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116608','50092L - Halswell Road','2018-02-15','50194-Augus-crane roades','50912 - WTC Civil Construction','Fulton Hogan Canterbury','completed');
+insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116609',' 50216-Accessman','2018-02-13','50194-Augus-crane roades','WTC - West Coast','Fulton Hogan Corporate','Approved');
+insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116609','50216-Accessman','2018-02-15','50194-Augus-crane roades','50912 - WTC Civil Construction','Fulton Hogan Canterbury','Submitted');
+ insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116609','50216-Accessman','2018-02-15','50194-Augus-crane roades','50912 - WTC Civil Construction','Fulton Hogan Canterbury','completed');
+ insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116609','50217-stdEmployee','2018-02-15','50194-Augus-crane roades','50912 - WTC Civil Construction','Fulton Hogan Canterbury','completed');
+ insert into jobRecords (name,jobno,date,department,division,region,status)
+values('DJR-0116609','50218-Ayeothanes','2018-02-15','50194-Augus-crane roades','50912 - WTC Civil Construction','Fulton Hogan Canterbury','completed');
+
+  
+ 
+ +----+--------------+--------------------------+------------+--------------------------------+-----------------------+-------------------------+--------------------------+
+| id | name         | jobno                    | date       | department                     | division              | region                  | status                   |
++----+--------------+--------------------------+------------+--------------------------------+-----------------------+-------------------------+--------------------------+
+|  4 | DJR-01114569 | 50216-Accessman          | 2018-03-22 | 50194-Augus-crane roades       | Fultun Hogan Saintary | Wtc West coast          | Approved                 |
+|  5 | DJR-0116605  | 50RM64 - 10716 Esplanade | 2018-03-24 | 0 - Corporate Business Unit    | WTC - West Coast      | Fulton Hogan Corporate  | Approved                 |
+|  7 | DJR-0114570  | 50RM64 - 10716 Esplanade | 2018-03-23 | 50194-Augus-crane roades       | Fultun Hogan Saintary | Fulton Hogan Corporate  | Approved                 |
+| 10 | terst        | dsfdsa                   | 2018-09-12 | 50194-Augus-crane roades       | Fultun Hogan Saintary | test                    | Approved                 |
+|  1 | dfsafsa      | dsfdsa                   | 2018-03-15 | dsafdafd                       | dsafdsa               | fdsafd                  | dsafa                    |
+| 15 | dfsafsa      | dsfdsa                   | 2018-02-01 | dsafdafd                       | dsafdsa               | fdsafd                  | dsafa                    |
+| 19 | hlhlhk       | 545432                   | 1993-07-12 | lnkjghjkg                      | hjlhljkh              | lhlkhlkh                | lkhlkhl                  |
+| 18 | dfs          | 1231                     |            | IT                             | IT                    | EST                     | STE                      |
+|  2 | DJR-0116607  | 50092L - Halswell Road   | 2018-02-15 | 50912 - WTC Civil Construction | WTC - West Coast      | Fulton Hogan Canterbury | Submitted - Not approved |
+|  3 | DJR-0116608  | 50092L - Halswell Road   | 2018-02-15 | 50911 - WTC Civil Construction | WTC - West Coast      | Fulton Hogan Canterbury | Submitted - Not approved |
+|  6 | testing      | testing                  | 2022-04-12 | testing                        | testing               | testing                 | testing                  |
+|  8 | testing      | testing                  | 2018-03-09 | testing                        | testing               | testing                 | testing                  |
+|  9 | testing      | testing                  | 2018-03-09 | testing                        | testing               | testing                 | testing                  |
+| 11 | testing      | testing                  | 2018-03-09 | testing                        | testing               | testing                 | testing                  |
+| 12 | testing      | testing                  | 2018-03-09 | testing                        | testing               | testing                 | testing                  |
+| 13 | testing      | testing                  | 2018-03-09 | testing                        | testing               | testing                 | testing                  |
+| 14 | testing      | testing                  | 2018-04-09 | testing                        | testing               | testing                 | testing                  |
+| 16 | testing      | testing                  | 2018-03-09 | testing                        | testing               | testing                 | testing                  |
+| 17 | testing      | testing                  | 2018-03-12 | testing                        | testing               | testing                 | testing                  |
++----+--------------+--------------------------+------------+-----------------
+Hi Team,
+
+Today I have worked on
+
+Resources on JSP tag libs, JSTL
+Resources and examples on Threads, synchronisation
+Implemented pie chart to render data group by status
+Please find example and deliverables below
+http://192.168.1.107:8081/
+user: puram,
+pass:puram
+https://github.com/purampurushotham/Java_training/tree/develop/Servlets
