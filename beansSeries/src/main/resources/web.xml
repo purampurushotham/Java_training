@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+http://www.springframework.org/schema/context ">
+
+    <!--<context:component-scan base-package="com.infotech.controller"></context:component-scan>
+    <bean
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix">
+    <value>/WEB-INF/views/</value>
+    </property>
+
+    <property name="suffix">
+    <value>.jsp</value>
+    </property>
+    </bean>-->
+   <!--BEAN SCOPES-->
+   <!-- <bean id="singleTon" class="beanScopes.SingleTon" scope="singleton"></bean>
+    <bean id="prototypeScope" class="beanScopes.PrototypeScope" scope="prototype"></bean>-->
+    <!---->
+
+    <!--BEAN INHERITANCE-->
+    <!--<bean id ="parentBean" class="beanInheritance.ParentBean" abstract="true">
+        <property name="message" value="Parent message"></property>
+    </bean>
+    <bean id="childBean" parent="parentBean">
+        <property name="title" value="Child Title"></property>
+        <property name="message" value="Child Message"></property>
+    </bean>
+-->
+    <!---->
+    <!--BEAN LIFE CYCLE-->
+  <!--  <bean id="personBean" class="PersonBean"
+        init-method="personBeanInit"
+          destroy-method="personBeanDestroy">
+        <property name="name" value="puram"></property>
+        <property name="age" value="24"></property>
+    </bean>
+    <bean id="awareBean" class="AwareBean"></bean>
+    <bean id="messageBean" init-method="init" destroy-method="destroy" class="beanProcess.MessageBean">
+        <property name="message" value="Beans Message For pre / post processing"></property>
+    </bean>
+    <bean id="messageBeanPostProcessor" class="beanProcess.MessageBeanPostProcessor"></bean>-->
+
+    <!--Beans Dependency Injection -->
+  <!--  <bean id="constructorBased" class="dependecyInjection.ConstructorBased">
+        <constructor-arg value="20"></constructor-arg>
+        <constructor-arg value="Test"></constructor-arg>
+        <property name="name" value="Puram"></property>
+    </bean>-->
+<bean id="room" class="innerBeans.Room">
+    <property name="roomNumber" value="501"></property>
+    <property name="allotedTo">
+        <bean class="innerBeans.Student">
+            <property name="name" value="Puram"></property>
+        </bean>
+    </property>
+</bean>
+</beans>
+<!---->
